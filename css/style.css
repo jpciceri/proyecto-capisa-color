@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    text-transform: inherit;
+    color: rgba(6, 8, 60, 0.584);
+    padding: 50px 30px 50px 30px;
+
+}
+
+article {
+    padding: 50px 30px 50px 30px;
+}
+
+header {
+    padding: 30px;
+    background-color: #d6e6ff;
+}
+
+main {
+    padding: 50px 30px 50px 30px;
+    background-color: #e5d4ef;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(6, 8, 60, 0.584);
+}
+
+.logo-capisasrl {
+    image-orientation: flip;
+    width: 400px;
+    height: 400px;
+}
+
+.marcas {
+    list-style: none;
+
+}
+
+.marcas li {
+    margin-bottom: 3px;
+    text-align: left;
+
+}
+
+.operadora {
+    height: 250px;
+    width: 300px;
+    float: right;
+}
+
+.logo-capisaa {
+    width: 150px;
+    height: 100px;
+}
+
+.blondorplex {
+    width: 350px;
+    height: 420px;
+    float: left;
+}
+
+.nutricurls {
+    width: 400px;
+    height: 400px;
+    float: right
+}
+
+.segundo-parrafo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #01807a;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 5px;
+}
+
+.tercer-parrafo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: rgb(6, 8, 60, 0.584);
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 5px;
+}
+
+#color {
+    color: rgb(6, 8, 60, 0.584);
+}
+
+.contacto {
+    text-align: left;
+}
+
+.contacto-telefonico {
+    text-align: left;
+    color: rgba(59, 125, 50, 0.584);
+}
+
+h1 {
+    font-style: normal;
+    text-align: center;
+    color: rgb(115, 27, 89);
+    padding: 2px;
+    border: 20px solid #d7f9f8;
+    margin-left: 500px;
+    margin-right: 500px
+}
+
+section {
+    background-color: #fbe0e0;
+    text-align: center;
+    margin: 80px;
+}
+
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 40px 40px 40px 40px;
+}
+
+.marcas-logo {
+    height: 100px;
+    width: 147px;
+}
+
+.marcas-logo-index {
+    margin-left: 590px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.imgblondor {
+    width: 450px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 10%;
+    border: 10px inset rgb(168, 83, 248, 0.353);
+}
+
+p span {
+    text-transform: lowercase;
+    color: rgba(59, 125, 50, 0.584);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(81, 7, 99);
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.descripcion {
+    color: #ac6f82
+}
+
+footer {
+    background-color: #d6e6ff;
+    padding: 30px;
+}
+
+body {
+    background-color: #e5d4ef;
+}
+
+div {
+    text-align: center
+}
+
+article {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
