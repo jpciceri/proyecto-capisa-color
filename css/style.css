@@ -5,13 +5,207 @@
     padding: 0;
 }
 
+
+/* ----------------------------------------- */
+/*comienzo a dar estilos mobile first 0-500*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 109, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+footer {
+    padding: 3em;
+    background-color: #3a3548;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+/*declarar mis áreas para grid*/
+
+header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.cards-ofertas {
+    grid-area: galeria;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*empiezo a acomodar por áreas*/
+
+/* .cards-ofertas-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+
+} */
+
+img {
+    border: 8px solid #3a3548
+}
+
+@media (min-width: 500px) {
+    /* .ofertas {
+        background-color: #e5d4ef;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "ad"
+            "galeria"
+            "footer";
+    } */
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+
+    }
+
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:768px) {
+    /* .ofertas {
+        background: #e5d4ef;
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "nav  nav    nav"
+            "ad      ad     ad"
+            "galeria galeria galeria"
+            "footer  footer  footer"
+    } */
+
+    nav ul {
+        flex-direction: row;
+        border: 2px solid,
+
+    }
+
+    nav ul,
+    .ad,
+    article {
+        color: #3a3548;
+
+    }
+
+    header,
+    h1,
+    h2,
+    a {
+        color: #3a3548;
+    }
+
+    .cards-ofertas {
+        background-color: rgba(75, 185, 189, 0.9991);
+    }
+
+    .cards-ofertas-img {
+        background-color: #3a3548;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 3em;
+    }
+
+    img {
+        width: 100%;
+        height: 150px;
+        border: 5px solid;
+    }
+
+    footer {
+        margin-top: 1.5em;
+        background: rgb(225, 96, 245);
+    }
+
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: #e5d4ef;
+    }
+
+    .navbar {
+        width:100%;
+        padding:0px;
+    }
+    /* .cards-ofertas-img {
+        padding: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "header"
+            ".ofertas"
+            ".ofertas_title"
+            ".ad"
+            "footer";
+        height: auto;
+        margin: 0;
+        align-items: stretch;
+    } */
+
+    img {
+        width: 84px;
+        height: 80px;
+        margin-top: 20px;
+        border: 0px;
+    }
+}
+
+/* ----copi */
 p {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.5;
     letter-spacing: 5px;
     word-spacing: 7px;
     text-transform: inherit;
@@ -26,17 +220,53 @@ article {
 
 header {
     padding: 30px;
-    background-color: #d6e6ff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 109, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 main {
     padding: 50px 30px 50px 30px;
-    background-color: #e5d4ef;
+    background-color: #6CF0D9;
+}
+
+.cards-ofertas {
+    background-color: #ac6f82;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carddy {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+
+.carddy-img-top {
+    width:90%;
+    height:200px;
+    max-width: 80%;
+}
+
+.nutric {
+    margin: 30px;
+    background-color: white;
+}
+
+.carddy-text {
+    font-size: small;
+}
+.carddy-body{
+    height:320px
 }
 
 a {
     text-decoration: none;
-    color: rgb(6, 8, 60, 0.584);
+    color: whitesmoke;
 }
 
 .logo-capisasrl {
@@ -45,27 +275,31 @@ a {
     height: 400px;
 }
 
+.navbar-collapse.collapse.show .nav-item{
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-collapse.collapse.show .nav-item a{
+  font-size:16px;
+}
+
 .marcas {
     list-style: none;
-
 }
 
 .marcas li {
     margin-bottom: 3px;
     text-align: left;
-
-}
-
-.operadora {
-    height: 250px;
-    width: 300px;
-    float: right;
 }
 
 .logo-capisaa {
     width: 150px;
     height: 100px;
 }
+
+/* Productos */
 
 .blondorplex {
     width: 350px;
@@ -84,7 +318,7 @@ a {
     font-style: normal;
     color: #01807a;
     text-align: center;
-    line-height: 35px;
+    line-height: 1.5;
     letter-spacing: 5px;
 }
 
@@ -93,14 +327,11 @@ a {
     font-style: normal;
     color: rgb(6, 8, 60, 0.584);
     text-align: center;
-    line-height: 35px;
+    line-height:1.5;
     letter-spacing: 5px;
 }
 
-#color {
-    color: rgb(6, 8, 60, 0.584);
-}
-
+/* Contacto */
 .contacto {
     text-align: left;
 }
@@ -110,29 +341,35 @@ a {
     color: rgba(59, 125, 50, 0.584);
 }
 
+.operadora {
+    height: 250px;
+    width: 300px;
+    float: right;
+}
+
+
 h1 {
     font-style: normal;
     text-align: center;
     color: rgb(115, 27, 89);
     padding: 2px;
     border: 20px solid #d7f9f8;
-    display: flex;
-    flex-direction: column;
     margin: 2px;
 }
 
-section {
-    background-color: #fbe0e0;
+
+.ofertas_title {
     text-align: center;
-    margin: 80px;
 }
 
-
-
 nav ul li {
-    list-style: none;
     display: inline-block;
+    list-style: none;
     padding: 40px 40px 40px 40px;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .marcas-logo {
@@ -141,18 +378,10 @@ nav ul li {
 }
 
 .marcas-logo-index {
-    display: flex;
-    flex-direction: row;
     margin: auto;
+    width: 200px;
     height: 200px;
-}
-
-.imgblondor {
-    width: 450px;
-    height: 500px;
-    margin: auto;
-    border-radius: 10%;
-    border: 10px inset rgb(168, 83, 248, 0.353);
+    margin-top: 20px;
 }
 
 p span {
@@ -176,64 +405,17 @@ h2 {
 
 footer {
     background-color: #d6e6ff;
-    padding: 30px;
+    padding: 90px;
 }
 
-body {
-    background-color: #e5d4ef;
-}
-
-div {
-    text-align: center
-}
 
 article {
     text-align: center;
 }
 
-div {
+.footer-redes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-}
-
-header{
-    grid-area: header;
-    background-color: blanchedalmond;
-}
-.productos{
-    grid-area: productos;
-    background-color: blanchedalmond;
-}
-.servicios{
-    grid-area: servicios;
-    background-color: blanchedalmond;
-}
-nav{
-    grid-area: nav;
-    background-color: blanchedalmond;
-}
-aside{
-    grid-area: aside;
-    background-color: blanchedalmond;
-}
-footer{
-    grid-area: footer;
-    background-color: blanchedalmond;
-}
-
-.grilla{
-    display: grid;
-    width:100%;
-    height: 100vh;
-    grid-template-columns: 20% auto 15%;
-    grid-template-rows: 100px 2fr 2fr 100px ;
-    grid-template-areas: 
-    "nav header     header"
-    "nav productos  aside"
-    "nav servicios  aside"
-    "nav footer     footer";
-    gap:10px;
 
 }

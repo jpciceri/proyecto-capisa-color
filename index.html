@@ -7,65 +7,146 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Capisa Color</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo-capisa.png" alt="logo capisa sin fondo" class="logo-capisaa">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./section/marcas.html">MARCAS</a>
-                </li>
-                <li>
-                    <a href="./section/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./section/productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./section/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+    <header class="navbar">        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./section/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Capisa Color</h1>
-        <img src="./img/logo-capisa-sin-fondo.jpg" alt="logo-capisa-sin-fondo" class="marcas-logo-index">
-        <p class="descripcion">Productos para Perfumerias, Peluquerias y Farmacias</p>
-
-        <section>
-            <h2>Blondor Plex</h2>
-            <p>Los creadores de vínculos se han convertido en un aditivo básico en muchos tratamientos de aclarado.
-                Wella
-                presenta por primera vez nuestro polvo de aclarado con tecnología de creación de vínculos incluida. El
-                nuevo
-                y revolucionario BlondorPlex, de preparación sencilla y hasta un 97 % menos de rotura capilar* sin
-                afectar
-                al aclarado.</p>
-
-            <img src="./img/blondorplex.jpg" alt="blondor plex" class="imgblondor">
-            <p>Diseñado con la tecnología BlondorPlex para no comprometer la aclaración.
-                La fórmula premezclada ahorra tiempo de preparación en el salón (no se necesita aditivo).
-                Perfecto para servicios de aclaración premium (excepto aplicación a mano alzada).</p>
-        </section>
-
-        <article>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/afTo7K0rABw"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </article>
+        <div class="row">
+            <div class="col">
+                <h1>Capisa Color</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/logo-capisa-sin-fondo.jpg" alt="logo-capisa-sin-fondo" class="marcas-logo-index">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="descripcion">Productos para Perfumerias, Peluquerias y Farmacias</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col ofertas">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="ofertas_title">Ofertas</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="carddy">
+                            <div class="carddy-img">
+                                <img src="./img/blondorplex.jpg" class="carddy-img-top" alt="...">
+                            </div>
+                            <div class="carddy-body">
+                                <h5 class="carddy-title">BLONDOR</h5>
+                                <p class="carddy-text"> BlondorPlex, nuevo decolorante</p>                                
+                            </div>
+                            <div class="carddy-footer">
+                                <a href="./section/productos.html" class="btn btn-primary">Ir a productos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="carddy">
+                            <div class="carddy-img">
+                                <img src="./img/nutricurls.jpg" class="carddy-img-top" alt="...">
+                            </div>
+                            <div class="carddy-body">
+                                <h5 class="carddy-title">NUTRICURLS</h5>
+                                <p class="carddy-text">SHAMPOO PARA ONDAS
+                                    Shampoo ligero para cabello ondulado</p>                                
+                            </div>
+                            <div class="carddy-footer">
+                                <a href="./section/productos.html" class="btn btn-primary">Ir a productos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="carddy">
+                            <div class="carddy-img">
+                                <img src="./img/color-motion.webp" class="carddy-img-top" alt="...">
+                            </div>
+                            <div class="carddy-body">
+                                <h5 class="carddy-title">COLOR MOTION</h5>
+                                <p class="carddy-text">Optimiza el pH después del tratamiento de coloración.
+                                    Actúa en tan solo 30 segundos..</p>                                
+                            </div>
+                            <div class="carddy-footer">
+                                <a href="./section/productos.html" class="btn btn-primary">Ir a productos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="carddy">
+                            <div class="carddy-img">
+                                <img src="./img/fusion.webp" class="carddy-img-top" alt="...">
+                            </div>
+                            <div class="carddy-body">
+                                <h5 class="carddy-title">FUSION</h5>
+                                <p class="carddy-text">Ayuda a reparar el cabello deteriorado, dejándolo limpio y
+                                    protegido. Con
+                                    EDDS, lípidos micronizados y aminoácidos.</p>                                
+                            </div>
+                            <div class="carddy-footer">
+                                <a href="./section/productos.html" class="btn btn-primary">Ir a productos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <article class="ad">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/afTo7K0rABw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div>
+        <div class="footer-redes">
             <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram-icono.svg"
                     alt="icono instagram"></a>
             <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./img/whatsapp-icono.svg"
@@ -74,6 +155,9 @@
                     alt="icono facebook"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
